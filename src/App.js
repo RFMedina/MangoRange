@@ -1,25 +1,16 @@
-import logo from './logo.svg';
-import './App.css';
+import Range from './component/range';
+import './styles.css';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <div className="centrado animate__animated animate__backInLeft">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/1/1c/Logo_of_Mango_%28new%29.svg/2560px-Logo_of_Mango_%28new%29.svg.png"></img>
+      </div>
+
+      <Range min={0} max={1000} />
+    </>
   );
-}
+};
 
 export default App;
